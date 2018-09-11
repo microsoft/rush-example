@@ -1,3 +1,8 @@
+# Example Rush Monorepo
+
+This template is part of the documentation of the [Rush](https://rushjs.io/) tool.
+It contains templates for all the Rush configuration files, and a simple setup that
+builds two empty projects.
 
 # Contributing
 
