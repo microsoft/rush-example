@@ -1,8 +1,29 @@
 # Example Rush Monorepo
 
 This template is part of the documentation of the [Rush](https://rushjs.io/) tool.
-It contains templates for all the Rush configuration files, and a simple setup that
-builds two empty projects.
+It contains documentated templates for all the standard Rush configuration files.
+It also includes three barebones projects that illustrate some dependency
+relationships in a Rush repo:
+
+- **apps/my-app**: The web application
+- **libraries/my-controls**: A control library used by the application
+- **tools/my-toolchain**: A NodeJS build tool used to compile the other projects
+
+(These projects are NOT meant to provide a realistic tool chain.)
+
+
+# Building this repo
+
+To build the projects in this repo, try these shell commands:
+
+```
+npm install -g @microsoft/rush
+rush install
+rush build
+```
+
+For more information, see the documentation at:  https://rushjs.io/
+
 
 # Contributing
 

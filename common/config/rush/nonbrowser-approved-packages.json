@@ -7,10 +7,6 @@
       "allowedCategories": [ "tools" ]
     },
     {
-      "name": "my-controls",
-      "allowedCategories": [ "main" ]
-    },
-    {
       "name": "my-toolchain",
       "allowedCategories": [ "main" ]
     },
