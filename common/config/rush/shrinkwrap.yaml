@@ -1,0 +1,154 @@
+dependencies:
+  '@rush-temp/my-app': 'file:projects/my-app.tgz'
+  '@rush-temp/my-controls': 'file:projects/my-controls.tgz'
+  '@rush-temp/my-toolchain': 'file:projects/my-toolchain.tgz'
+  '@types/colors': 1.2.1
+  '@types/node': 10.9.4
+  colors: 1.3.2
+  rimraf: 2.6.2
+  typescript: 3.0.3
+  whatwg-fetch: 3.0.0
+packages:
+  /@types/colors/1.2.1:
+    dependencies:
+      colors: 1.3.2
+    deprecated: 'This is a stub types definition. colors provides its own type definitions, so you don''t need this installed.'
+    dev: false
+    resolution:
+      integrity: sha512-7jNkpfN2lVO07nJ1RWzyMnNhH/I5N9iWuMPx9pedptxJ4MODf8rRV0lbJi6RakQ4sKQk231Fw4e2W9n3D7gZ3w==
+  /@types/node/10.9.4:
+    dev: false
+    resolution:
+      integrity: sha512-fCHV45gS+m3hH17zgkgADUSi2RR1Vht6wOZ0jyHP8rjiQra9f+mIcgwPQHllmDocYOstIEbKlxbFDYlgrTPYqw==
+  /balanced-match/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
+  /brace-expansion/1.1.11:
+    dependencies:
+      balanced-match: 1.0.0
+      concat-map: 0.0.1
+    dev: false
+    resolution:
+      integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
+  /colors/1.3.2:
+    dev: false
+    engines:
+      node: '>=0.1.90'
+    resolution:
+      integrity: sha512-rhP0JSBGYvpcNQj4s5AdShMeE5ahMop96cTeDl/v9qQQm2fYClE2QXZRi8wLzc+GmXSxdIqqbOIAhyObEXDbfQ==
+  /concat-map/0.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
+  /fs.realpath/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
+  /glob/7.1.3:
+    dependencies:
+      fs.realpath: 1.0.0
+      inflight: 1.0.6
+      inherits: 2.0.3
+      minimatch: 3.0.4
+      once: 1.4.0
+      path-is-absolute: 1.0.1
+    dev: false
+    resolution:
+      integrity: sha512-vcfuiIxogLV4DlGBHIUOwI0IbrJ8HWPc4MU7HzviGeNho/UJDfi6B5p3sHeWIQ0KGIU0Jpxi5ZHxemQfLkkAwQ==
+  /inflight/1.0.6:
+    dependencies:
+      once: 1.4.0
+      wrappy: 1.0.2
+    dev: false
+    resolution:
+      integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=
+  /inherits/2.0.3:
+    dev: false
+    resolution:
+      integrity: sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
+  /minimatch/3.0.4:
+    dependencies:
+      brace-expansion: 1.1.11
+    dev: false
+    resolution:
+      integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
+  /once/1.4.0:
+    dependencies:
+      wrappy: 1.0.2
+    dev: false
+    resolution:
+      integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
+  /path-is-absolute/1.0.1:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
+  /rimraf/2.6.2:
+    dependencies:
+      glob: 7.1.3
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-lreewLK/BlghmxtfH36YYVg1i8IAce4TI7oao75I1g245+6BctqTVQiBP3YUJ9C6DQOXJmkYR9X9fCLtCOJc5w==
+  /typescript/3.0.3:
+    dev: false
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-kk80vLW9iGtjMnIv11qyxLqZm20UklzuR2tL0QAnDIygIUIemcZMxlMWudl9OOt76H3ntVzcTiddQ1/pAAJMYg==
+  /whatwg-fetch/3.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
+  /wrappy/1.0.2:
+    dev: false
+    resolution:
+      integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
+  'file:projects/my-app.tgz':
+    dependencies:
+      typescript: 3.0.3
+      whatwg-fetch: 3.0.0
+    dev: false
+    name: '@rush-temp/my-app'
+    resolution:
+      integrity: sha512-YThRXWcn2MrdOxASWIYh2UP6tAxJjLKXAZ/Bl6A9RBZ3cM0qhvglIkrveW8LGOqt9PQM8Z8578DAbWNKfydrIw==
+      tarball: 'file:projects/my-app.tgz'
+    version: 0.0.0
+  'file:projects/my-controls.tgz':
+    dependencies:
+      typescript: 3.0.3
+    dev: false
+    name: '@rush-temp/my-controls'
+    resolution:
+      integrity: sha512-oHXOZCwlbGEILYNWY1vV0/W/Y9oPXB7r6QoLVZdUv/TZ20brYDtZ9/WIzqjN1YNUQRJpmtyyLxp/NAhM8tphBg==
+      tarball: 'file:projects/my-controls.tgz'
+    version: 0.0.0
+  'file:projects/my-toolchain.tgz':
+    dependencies:
+      '@types/colors': 1.2.1
+      '@types/node': 10.9.4
+      colors: 1.3.2
+      rimraf: 2.6.2
+      typescript: 3.0.3
+    dev: false
+    name: '@rush-temp/my-toolchain'
+    resolution:
+      integrity: sha512-OGtNAqgdxHzze+shuzbWwyq0Nm97Q2UmDy3kgo3ib88nfA5bfE077ZlV/m+djVmKLMmlEYOGViBzFrQMi/JmSA==
+      tarball: 'file:projects/my-toolchain.tgz'
+    version: 0.0.0
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@rush-temp/my-app': 'file:./projects/my-app.tgz'
+  '@rush-temp/my-controls': 'file:./projects/my-controls.tgz'
+  '@rush-temp/my-toolchain': 'file:./projects/my-toolchain.tgz'
+  '@types/colors': ^1.2.1
+  '@types/node': ^10.9.4
+  colors: ^1.3.2
+  rimraf: ^2.6.2
+  typescript: ^3.0.3
+  whatwg-fetch: ^3.0.0
