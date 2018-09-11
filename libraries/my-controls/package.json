@@ -1,0 +1,16 @@
+{
+  "name": "my-controls",
+  "version": "1.0.0",
+  "description": "An example library project",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "node_modules/.bin/my-build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "my-toolchain": "^1.0.0",
+    "typescript": "^3.0.3"
+  }
+}

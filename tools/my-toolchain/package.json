@@ -1,0 +1,21 @@
+{
+  "name": "my-toolchain",
+  "version": "1.0.0",
+  "description": "An example toolchain used to build projects in this repo",
+  "license": "MIT",
+  "bin": {
+    "my-build": "lib/start.js"
+  },
+  "scripts": {
+    "build": "rimraf ./lib/ && tsc"
+  },
+  "dependencies": {
+    "@types/colors": "^1.2.1",
+    "colors": "^1.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "rimraf": "^2.6.2",
+    "typescript": "^3.0.3"
+  }
+}
