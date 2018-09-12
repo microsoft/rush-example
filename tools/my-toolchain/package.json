@@ -4,7 +4,7 @@
   "description": "An example toolchain used to build projects in this repo",
   "license": "MIT",
   "bin": {
-    "my-build": "lib/start.js"
+    "my-build": "bin/my-build.js"
   },
   "scripts": {
     "build": "rimraf ./lib/ && tsc"
