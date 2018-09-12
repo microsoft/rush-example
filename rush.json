@@ -1,3 +1,4 @@
+// This is the main configuration file for Rush.
 // For full documentation, please see https://rushjs.io
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
@@ -7,6 +8,10 @@
   // behave like this release, regardless of which version is installed globally.
   //
   // The common/scripts/install-run-rush.js automation script also uses this version.
+  //
+  // NOTE: If you upgrade to a new major version of Rush, you should replace the "v5"
+  // path segment in the "$schema" field for all your Rush config files.  This will ensure
+  // correct error-underlining and tab-completion for editors such as VS Code.
   "rushVersion": "5.1.0",
 
   // The next field selects which package manager should be installed and determines its version.
