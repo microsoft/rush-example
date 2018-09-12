@@ -10,7 +10,6 @@
     "build": "rimraf ./lib/ && tsc"
   },
   "dependencies": {
-    "@types/colors": "^1.2.1",
     "colors": "^1.3.2"
   },
   "devDependencies": {

@@ -2,20 +2,12 @@ dependencies:
   '@rush-temp/my-app': 'file:projects/my-app.tgz'
   '@rush-temp/my-controls': 'file:projects/my-controls.tgz'
   '@rush-temp/my-toolchain': 'file:projects/my-toolchain.tgz'
-  '@types/colors': 1.2.1
   '@types/node': 10.9.4
   colors: 1.3.2
   rimraf: 2.6.2
   typescript: 3.0.3
   whatwg-fetch: 3.0.0
 packages:
-  /@types/colors/1.2.1:
-    dependencies:
-      colors: 1.3.2
-    deprecated: 'This is a stub types definition. colors provides its own type definitions, so you don''t need this installed.'
-    dev: false
-    resolution:
-      integrity: sha512-7jNkpfN2lVO07nJ1RWzyMnNhH/I5N9iWuMPx9pedptxJ4MODf8rRV0lbJi6RakQ4sKQk231Fw4e2W9n3D7gZ3w==
   /@types/node/10.9.4:
     dev: false
     resolution:
@@ -128,7 +120,6 @@ packages:
     version: 0.0.0
   'file:projects/my-toolchain.tgz':
     dependencies:
-      '@types/colors': 1.2.1
       '@types/node': 10.9.4
       colors: 1.3.2
       rimraf: 2.6.2
@@ -136,7 +127,7 @@ packages:
     dev: false
     name: '@rush-temp/my-toolchain'
     resolution:
-      integrity: sha512-OGtNAqgdxHzze+shuzbWwyq0Nm97Q2UmDy3kgo3ib88nfA5bfE077ZlV/m+djVmKLMmlEYOGViBzFrQMi/JmSA==
+      integrity: sha512-Bsw9RLje8o0Xf64piV/WYvGHUeIJr82qre7pjzVUExinr/nV9wQ/16XX+W+cRWoYdjcgSaIYdueikz6YQ+OtNQ==
       tarball: 'file:projects/my-toolchain.tgz'
     version: 0.0.0
 registry: 'https://registry.npmjs.org/'
@@ -146,7 +137,6 @@ specifiers:
   '@rush-temp/my-app': 'file:./projects/my-app.tgz'
   '@rush-temp/my-controls': 'file:./projects/my-controls.tgz'
   '@rush-temp/my-toolchain': 'file:./projects/my-toolchain.tgz'
-  '@types/colors': ^1.2.1
   '@types/node': ^10.9.4
   colors: ^1.3.2
   rimraf: ^2.6.2
