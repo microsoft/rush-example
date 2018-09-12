@@ -1,0 +1,17 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "An example application that consumes the my-controls library",
+  "license": "MIT",
+  "scripts": {
+    "build": "node_modules/.bin/my-build"
+  },
+  "dependencies": {
+    "my-controls": "^1.0.0",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "my-toolchain": "^1.0.0",
+    "typescript": "^3.0.3"
+  }
+}

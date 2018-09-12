@@ -1,0 +1,1 @@
+export { MyClass } from './MyClass';
