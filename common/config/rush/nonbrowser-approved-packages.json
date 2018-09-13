@@ -3,12 +3,16 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@types/node",
+      "allowedCategories": [ "tools" ]
+    },
+    {
       "name": "colors",
       "allowedCategories": [ "tools" ]
     },
     {
       "name": "my-toolchain",
-      "allowedCategories": [ "main" ]
+      "allowedCategories": [ "production" ]
     },
     {
       "name": "rimraf",
@@ -16,7 +20,7 @@
     },
     {
       "name": "typescript",
-      "allowedCategories": [ "main", "tools" ]
+      "allowedCategories": [ "production", "tools" ]
     }
   ]
 }

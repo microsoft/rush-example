@@ -4,11 +4,11 @@
   "packages": [
     {
       "name": "my-controls",
-      "allowedCategories": [ "main" ]
+      "allowedCategories": [ "production" ]
     },
     {
       "name": "whatwg-fetch",
-      "allowedCategories": [ "main" ]
+      "allowedCategories": [ "production" ]
     }
   ]
 }
