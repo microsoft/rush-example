@@ -4,9 +4,9 @@
  */
 [
   /**
-   * A "version policy" is a custom package versioning strategy for use with "rush publish".
-   * The strategy affects a set of projects that are specified using the "versionPolicyName" field
-   * in rush.json.
+   * A "version policy" is a custom package versioning strategy for use with "rush change", "rush version",
+   * and "rush publish".  The strategy affects a set of projects that are specified using
+   * the "versionPolicyName" field in rush.json.
    */
   {
     /**
@@ -15,7 +15,7 @@
      * The "lockStepVersion" mode specifies that the projects will use "lock-step versioning".  This
      * strategy is appropriate for a set of packages that act as selectable components of a
      * unified product.  The entire set of packages are always published together, and always share
-     * the same NPM version number.  When the pacakges depend on other packages in the set, the
+     * the same NPM version number.  When the packages depend on other packages in the set, the
      * SemVer range is usually restricted to a single version.
      */
     "definitionName": "lockStepVersion",
@@ -48,7 +48,7 @@
      * This file is stored with the specified "main" project, which must be a member of the set.
      *
      * If this field is omitted, then a separate CHANGELOG.md file will be maintained for each
-     * pacakge in the set.
+     * package in the set.
      */
     "mainProject": "my-app"
   },

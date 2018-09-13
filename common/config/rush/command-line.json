@@ -7,7 +7,7 @@
 
   /**
    * Custom "commands" introduce new verbs for the command-line.  To see the help for these
-   * example commands, try "rush --help", "rush my-bulk-command --help", and
+   * example commands, try "rush --help", "rush my-bulk-command --help", or
    * "rush my-global-command --help".
    */
   "commands": [
@@ -16,8 +16,9 @@
        * (Required) Determines the type of custom command.
        * Rush's "bulk" commands are invoked separately for each project.  Rush will look in
        * each project's package.json file for a "scripts" entry whose name matches the
-       * command name.  By default the command will run for every project in the repo,
-       * but this can be restricted e.g. using the "--to" or "--from" parameters.
+       * command name.  By default, the command will run for every project in the repo,
+       * according to the dependency graph (similar to how "rush build" works).
+       * The set of projects can be restricted e.g. using the "--to" or "--from" parameters.
        */
       "commandKind": "bulk",
 
@@ -30,7 +31,7 @@
 
       /**
        * (Required) A short summary of the custom command to be shown when printing command line
-       * help (e.g. "rush --help")
+       * help, e.g. "rush --help".
        */
       "summary": "Example bulk custom command",
 
@@ -46,7 +47,8 @@
 
       /**
        * (Required) If true, then this command is safe to be run in parallel, i.e. executed
-       * simultaneously for multiple projects.
+       * simultaneously for multiple projects.  Similar to "rush build", regardless of parallelism
+       * projects will not start processing until their dependencies have completed processing.
        */
       "enableParallelism": false,
 
@@ -97,8 +99,8 @@
        *
        * NOTE: The Rush developers recommend that automation scripts should always use the long name
        * to improve readability.  The short name is only intended as a convenience for humans.
-       * The alphabet letters run out quickly, and are difficult to memorize, so
-       * *only* a short name if you expect the parameter to be used very often in everyday operations.
+       * The alphabet letters run out quickly, and are difficult to memorize, so *only* use
+       * a short name if you expect the parameter to be needed very often in everyday operations.
        */
        "shortName": "-m",
 
@@ -128,7 +130,10 @@
       "associatedCommands": [ "my-global-command" ],
 
       /**
-       * If the parameter is omitted from the command line, this value will be inserted by default.
+       * Normally if a parameter is omitted from the command line, it will not be passed
+       * to the shell command. this value will be inserted by default.  Whereas if a "defaultValue"
+       * is defined, the parameter will always be passed to the shell command, and will use the
+       * default value if unspecified.  The value must be one of the defined alternatives.
        */
       "defaultValue": "vanilla",
 

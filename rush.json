@@ -32,7 +32,7 @@
   // "yarnVersion": "1.9.4",
 
   /**
-   * Options that are only used when the PNPM pacakge manager is selected
+   * Options that are only used when the PNPM package manager is selected
    */
   "pnpmOptions": {
 
@@ -124,6 +124,9 @@
      *
      * Define a list of regular expressions describing allowable e-mail patterns for Git commits.
      * They are case-insensitive anchored JavaScript RegExps.  Example: ".*@example\.com"
+     *
+     * IMPORTANT: Because these are regular expressions encoded as JSON string literals,
+     * RegExp escapes need two backspashes, and ordinary periods should be "\\.".
      */
     "allowedEmailRegExps": [
       "[^@]+@users\\.noreply\\.github\\.com",
