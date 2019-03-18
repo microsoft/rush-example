@@ -16,7 +16,7 @@
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.4.0",
+  "rushVersion": "5.6.1",
 
   /**
    * The next field selects which package manager should be installed and determines its version.
@@ -67,7 +67,7 @@
    *   rush install, rush update, rush link, rush version, rush publish
    *
    * In some cases you may want this turned on, but need to allow certain packages to use a different
-   * version. In those cases, you will need to add an entry to the "allowedAlternateVersions"
+   * version. In those cases, you will need to add an entry to the "allowedAlternativeVersions"
    * section of the common-versions.json.
    */
    // "ensureConsistentVersions": true,
@@ -160,16 +160,35 @@
      * of a recommended email.  Make sure it conforms to one of the allowedEmailRegExps
      * expressions.
      */
-    "sampleEmail": "mrexample@users.noreply.github.com"
+    "sampleEmail": "mrexample@users.noreply.github.com",
+
+    /**
+     * The commit message to use when committing changes during 'rush publish'.
+     *
+     * For example, if you want to prevent these commits from triggering a CI build,
+     * you might configure your system's trigger to look for a special string such as "[skip-ci]"
+     * in the commit message, and then customize Rush's message to contain that string.
+     */
+    "versionBumpCommitMessage": "Applying package updates. [skip-ci]"
   },
 
   "repository": {
     /**
-     * This setting is sometimes needed when using "rush change" with multiple Git remotes.
-     * It specifies the remote url for the official Git repository.  If this URL is provided,
-     * "rush change" will use it to find the right remote to compare against.
+     * The URL of this Git repository, used by "rush change" to determine the base branch for your PR.
+     *
+     * The "rush change" command needs to determine which files are affected by your PR diff.
+     * If you merged or cherry-picked commits from the master branch into your PR branch, those commits
+     * should be excluded from this diff (since they belong to some other PR).  In order to do that,
+     * Rush needs to know where to find the base branch for your PR.  This information cannot be
+     * determined from Git alone, since the "pull request" feature is not a Git concept.  Ideally
+     * Rush would use a vendor-specific protocol to query the information from GitHub, Azure DevOps, etc.
+     * But to keep things simple, "rush change" simply assumes that your PR is against the "master" branch
+     * of the Git remote indicated by the respository.url setting in rush.json.  If you are working in
+     * a GitHub "fork" of the real repo, this setting will be different from the repository URL of your
+     * your PR branch, and in this situation "rush change" will also automatically invoke "git fetch"
+     * to retrieve the latest activity for the remote master branch.
      */
-    // "url": "https://github.com/Microsoft/rush-example"
+    "url": "https://github.com/Microsoft/rush-example"
   },
 
   /**
