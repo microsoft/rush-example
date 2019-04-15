@@ -10,4 +10,4 @@ yarn.lock                    merge=binary
 #
 # For more information, see this issue: https://github.com/Microsoft/web-build-tools/issues/1088
 #
-*.json            linguist-language="JSON With Comments"
+*.json            linguist-language=JSON-With-Comments
