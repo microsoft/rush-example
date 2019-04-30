@@ -1,7 +1,7 @@
 # Example Rush Monorepo
 
 This template is part of the documentation of the [Rush](https://rushjs.io/) tool.
-It contains documentated templates for all the standard Rush configuration files.
+It contains documented templates for all the standard Rush configuration files.
 It also includes three barebones projects that illustrate some dependency
 relationships in a Rush repo:
 
@@ -9,7 +9,7 @@ relationships in a Rush repo:
 - **libraries/my-controls**: A control library used by the application
 - **tools/my-toolchain**: A NodeJS build tool used to compile the other projects
 
-(These projects are NOT meant to provide a realistic tool chain.)
+(These projects are NOT meant to provide a realistic toolchain.)
 
 
 # Building this repo
