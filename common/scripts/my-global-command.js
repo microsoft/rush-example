@@ -1,4 +1,4 @@
-// This script provides the implementation for an example custom command that is
+// This script provides the implementation for the example custom command "my-global-command"
 // defined in common/config/rush/command-line.json.
 
 console.log('Invoking ' + __filename);

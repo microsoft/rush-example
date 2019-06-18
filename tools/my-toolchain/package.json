@@ -4,10 +4,12 @@
   "description": "An example toolchain used to build projects in this repo",
   "license": "MIT",
   "bin": {
-    "my-build": "bin/my-build.js"
+    "my-build": "bin/my-build.js",
+    "my-bulk-command": "bin/my-bulk-command.js"
   },
   "scripts": {
-    "build": "rimraf ./lib/ && tsc"
+    "build": "rimraf ./lib/ && tsc",
+    "my-bulk-command": ""
   },
   "dependencies": {
     "colors": "^1.3.2"

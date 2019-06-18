@@ -6,7 +6,8 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "build": "node_modules/.bin/my-build"
+    "build": "node_modules/.bin/my-build",
+    "my-bulk-command": "node_modules/.bin/my-bulk-command"
   },
   "dependencies": {},
   "devDependencies": {
