@@ -61,4 +61,5 @@ temp
 
 # Rush files
 common/temp/**
+.rush/temp/**
 package-deps.json
