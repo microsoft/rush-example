@@ -2,16 +2,16 @@ dependencies:
   '@rush-temp/my-app': 'file:projects/my-app.tgz'
   '@rush-temp/my-controls': 'file:projects/my-controls.tgz'
   '@rush-temp/my-toolchain': 'file:projects/my-toolchain.tgz'
-  '@types/node': 10.14.9
-  colors: 1.3.3
-  rimraf: 2.6.3
-  typescript: 3.5.2
+  '@types/node': 10.17.5
+  colors: 1.4.0
+  rimraf: 2.7.1
+  typescript: 3.7.2
   whatwg-fetch: 3.0.0
 packages:
-  /@types/node/10.14.9:
+  /@types/node/10.17.5:
     dev: false
     resolution:
-      integrity: sha512-NelG/dSahlXYtSoVPErrp06tYFrvzj8XLWmKA+X8x0W//4MqbUyZu++giUG/v0bjAT6/Qxa8IjodrfdACyb0Fg==
+      integrity: sha512-RElZIr/7JreF1eY6oD5RF3kpmdcreuQPjg5ri4oQ5g9sq7YWU8HkfB3eH8GwAwxf5OaCh0VPi7r4N/yoTGelrA==
   /balanced-match/1.0.0:
     dev: false
     resolution:
@@ -23,12 +23,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
-  /colors/1.3.3:
+  /colors/1.4.0:
     dev: false
     engines:
       node: '>=0.1.90'
     resolution:
-      integrity: sha512-mmGt/1pZqYRjMxB1axhTo16/snVZ5krrKkcmMeVKxzECMMXoCgnvTPp10QgHfcbQZw8Dq2jMNG6je4JlWU0gWg==
+      integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
   /concat-map/0.0.1:
     dev: false
     resolution:
@@ -37,17 +37,17 @@ packages:
     dev: false
     resolution:
       integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-  /glob/7.1.4:
+  /glob/7.1.6:
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
-      inherits: 2.0.3
+      inherits: 2.0.4
       minimatch: 3.0.4
       once: 1.4.0
       path-is-absolute: 1.0.1
     dev: false
     resolution:
-      integrity: sha512-hkLPepehmnKk41pUGm3sYxoFs/umurYfYJCerbXEyFIWcAzvpipAgVkBqqT9RBKMGjnq6kMuyYwha6csxbiM1A==
+      integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
   /inflight/1.0.6:
     dependencies:
       once: 1.4.0
@@ -55,10 +55,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=
-  /inherits/2.0.3:
+  /inherits/2.0.4:
     dev: false
     resolution:
-      integrity: sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
+      integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
   /minimatch/3.0.4:
     dependencies:
       brace-expansion: 1.1.11
@@ -77,20 +77,20 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
-  /rimraf/2.6.3:
+  /rimraf/2.7.1:
     dependencies:
-      glob: 7.1.4
+      glob: 7.1.6
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==
-  /typescript/3.5.2:
+      integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
+  /typescript/3.7.2:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-7KxJovlYhTX5RaRbUdkAXN1KUZ8PwWlTzQdHV6xNqvuFOs7+WBo10TQUqT19Q/Jz2hk5v9TQDIhyLhhJY4p5AA==
+      integrity: sha512-ml7V7JfiN2Xwvcer+XAf2csGO1bPBdRbFCkYBczNZggrBZ9c7G3riSUeJmqEU5uOtXNPMhE3n+R4FA/3YOAWOQ==
   /whatwg-fetch/3.0.0:
     dev: false
     resolution:
@@ -101,7 +101,7 @@ packages:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
   'file:projects/my-app.tgz':
     dependencies:
-      typescript: 3.5.2
+      typescript: 3.7.2
       whatwg-fetch: 3.0.0
     dev: false
     name: '@rush-temp/my-app'
@@ -111,7 +111,7 @@ packages:
     version: 0.0.0
   'file:projects/my-controls.tgz':
     dependencies:
-      typescript: 3.5.2
+      typescript: 3.7.2
     dev: false
     name: '@rush-temp/my-controls'
     resolution:
@@ -120,10 +120,10 @@ packages:
     version: 0.0.0
   'file:projects/my-toolchain.tgz':
     dependencies:
-      '@types/node': 10.14.9
-      colors: 1.3.3
-      rimraf: 2.6.3
-      typescript: 3.5.2
+      '@types/node': 10.17.5
+      colors: 1.4.0
+      rimraf: 2.7.1
+      typescript: 3.7.2
     dev: false
     name: '@rush-temp/my-toolchain'
     resolution:
