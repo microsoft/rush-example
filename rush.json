@@ -26,7 +26,7 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "4.12.5",
+  "pnpmVersion": "4.14.3",
 
   // "npmVersion": "4.5.0",
   // "yarnVersion": "1.9.4",
@@ -95,6 +95,7 @@
      * The default value is false.
      */
     // "preventManualShrinkwrapChanges": true
+    "useWorkspaces": true
   },
 
   /**
@@ -327,7 +328,7 @@
     //    * The folder name for this variant.
     //    */
     //   "variantName": "old-sdk",
-    // 
+    //
     //   /**
     //    * An informative description
     //    */
