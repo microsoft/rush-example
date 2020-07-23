@@ -2,17 +2,17 @@ dependencies:
   '@rush-temp/my-app': 'file:projects/my-app.tgz'
   '@rush-temp/my-controls': 'file:projects/my-controls.tgz'
   '@rush-temp/my-toolchain': 'file:projects/my-toolchain.tgz'
-  '@types/node': 10.17.26
+  '@types/node': 10.17.27
   colors: 1.4.0
   rimraf: 2.7.1
-  typescript: 3.9.5
-  whatwg-fetch: 3.0.0
+  typescript: 3.9.7
+  whatwg-fetch: 3.2.0
 lockfileVersion: 5.1
 packages:
-  /@types/node/10.17.26:
+  /@types/node/10.17.27:
     dev: false
     resolution:
-      integrity: sha512-myMwkO2Cr82kirHY8uknNRHEVtn0wV3DTQfkrjx17jmkstDRZ24gNUdl8AHXVyVclTYI/bNjgTPTAWvWLqXqkw==
+      integrity: sha512-J0oqm9ZfAXaPdwNXMMgAhylw5fhmXkToJd06vuDUSAgEDZ/n/69/69UmyBZbc+zT34UnShuDSBqvim3SPnozJg==
   /balanced-match/1.0.0:
     dev: false
     resolution:
@@ -85,25 +85,25 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
-  /typescript/3.9.5:
+  /typescript/3.9.7:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
-  /whatwg-fetch/3.0.0:
+      integrity: sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
+  /whatwg-fetch/3.2.0:
     dev: false
     resolution:
-      integrity: sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
+      integrity: sha512-SdGPoQMMnzVYThUbSrEvqTlkvC1Ux27NehaJ/GUHBfNrh5Mjg+1/uRyFMwVnxO2MrikMWvWAqUGgQOfVU4hT7w==
   /wrappy/1.0.2:
     dev: false
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
   'file:projects/my-app.tgz':
     dependencies:
-      typescript: 3.9.5
-      whatwg-fetch: 3.0.0
+      typescript: 3.9.7
+      whatwg-fetch: 3.2.0
     dev: false
     name: '@rush-temp/my-app'
     resolution:
@@ -112,7 +112,7 @@ packages:
     version: 0.0.0
   'file:projects/my-controls.tgz':
     dependencies:
-      typescript: 3.9.5
+      typescript: 3.9.7
     dev: false
     name: '@rush-temp/my-controls'
     resolution:
@@ -121,17 +121,16 @@ packages:
     version: 0.0.0
   'file:projects/my-toolchain.tgz':
     dependencies:
-      '@types/node': 10.17.26
+      '@types/node': 10.17.27
       colors: 1.4.0
       rimraf: 2.7.1
-      typescript: 3.9.5
+      typescript: 3.9.7
     dev: false
     name: '@rush-temp/my-toolchain'
     resolution:
       integrity: sha512-Mrgh3K0R8vXqJ3y4QPfJS2i+aXJzNBKITsr6yPgHwDVpSNlHZgqcAVeWuYOTwLiiyuNGSjmykcV2kt9fsKWJZg==
       tarball: 'file:projects/my-toolchain.tgz'
     version: 0.0.0
-registry: ''
 specifiers:
   '@rush-temp/my-app': 'file:./projects/my-app.tgz'
   '@rush-temp/my-controls': 'file:./projects/my-controls.tgz'
