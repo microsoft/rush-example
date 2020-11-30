@@ -18,3 +18,5 @@
 #
 #   //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}
 #
+registry=http://localhost:8081/repository/npm-ekdotcom/
+always-auth=false
