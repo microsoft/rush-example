@@ -1,6 +1,6 @@
 {
   "name": "my-toolchain",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An example toolchain used to build projects in this repo",
   "license": "MIT",
   "bin": {
