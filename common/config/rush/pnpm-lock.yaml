@@ -2,17 +2,17 @@ dependencies:
   '@rush-temp/my-app': 'file:projects/my-app.tgz'
   '@rush-temp/my-controls': 'file:projects/my-controls.tgz'
   '@rush-temp/my-toolchain': 'file:projects/my-toolchain.tgz'
-  '@types/node': 10.17.28
+  '@types/node': 10.17.48
   colors: 1.4.0
   rimraf: 2.7.1
   typescript: 3.9.7
-  whatwg-fetch: 3.4.0
+  whatwg-fetch: 3.5.0
 lockfileVersion: 5.1
 packages:
-  /@types/node/10.17.28:
+  /@types/node/10.17.48:
     dev: false
     resolution:
-      integrity: sha512-dzjES1Egb4c1a89C7lKwQh8pwjYmlOAG9dW1pBgxEk57tMrLnssOfEthz8kdkNaBd7lIqQx7APm5+mZ619IiCQ==
+      integrity: sha512-Agl6xbYP6FOMDeAsr3QVZ+g7Yzg0uhPHWx0j5g4LFdUBHVtqtU+gH660k/lCEe506jJLOGbEzsnqPDTZGJQLag==
   /balanced-match/1.0.0:
     dev: false
     resolution:
@@ -92,10 +92,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
-  /whatwg-fetch/3.4.0:
+  /whatwg-fetch/3.5.0:
     dev: false
     resolution:
-      integrity: sha512-rsum2ulz2iuZH08mJkT0Yi6JnKhwdw4oeyMjokgxd+mmqYSd9cPpOQf01TIWgjxG/U4+QR+AwKq6lSbXVxkyoQ==
+      integrity: sha512-jXkLtsR42xhXg7akoDKvKWE40eJeI+2KZqcp2h3NsOrRnDvtWX36KcKl30dy+hxECivdk2BVUHVNrPtoMBUx6A==
   /wrappy/1.0.2:
     dev: false
     resolution:
@@ -103,7 +103,7 @@ packages:
   'file:projects/my-app.tgz':
     dependencies:
       typescript: 3.9.7
-      whatwg-fetch: 3.4.0
+      whatwg-fetch: 3.5.0
     dev: false
     name: '@rush-temp/my-app'
     resolution:
@@ -121,7 +121,7 @@ packages:
     version: 0.0.0
   'file:projects/my-toolchain.tgz':
     dependencies:
-      '@types/node': 10.17.28
+      '@types/node': 10.17.48
       colors: 1.4.0
       rimraf: 2.7.1
       typescript: 3.9.7
