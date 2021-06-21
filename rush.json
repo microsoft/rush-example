@@ -24,7 +24,8 @@
       "packageName": "my-app",
       "projectFolder": "apps/my-app",
       "reviewCategory": "production",
-      "versionPolicyName": "publishMe"
+      "versionPolicyName": "publishMe",
+      "shouldPublish": true
     },
 
     {
