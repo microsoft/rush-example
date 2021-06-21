@@ -1,8 +1,6 @@
 [
   {
-    "definitionName": "lockStepVersion",
-    "policyName": "publishMe",
-    "version": "1.0.0",
-    "nextBump": "prerelease"
+    "definitionName": "individualVersion",
+    "policyName": "publishMe"
   }
 ]
