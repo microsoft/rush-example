@@ -2,6 +2,18 @@
   "name": "my-app",
   "entries": [
     {
+      "version": "1.0.5",
+      "tag": "my-app_v1.0.5",
+      "date": "Mon, 21 Jun 2021 15:35:15 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "6"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.4",
       "tag": "my-app_v1.0.4",
       "date": "Mon, 21 Jun 2021 15:30:34 GMT",
