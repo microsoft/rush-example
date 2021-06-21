@@ -1,6 +1,13 @@
 # Change Log - my-app
 
-This log was last generated on Mon, 21 Jun 2021 15:20:59 GMT and should not be manually modified.
+This log was last generated on Mon, 21 Jun 2021 15:27:00 GMT and should not be manually modified.
+
+## 1.0.3
+Mon, 21 Jun 2021 15:27:00 GMT
+
+### Patches
+
+- gfdshfg
 
 ## 1.0.2
 Mon, 21 Jun 2021 15:20:59 GMT
