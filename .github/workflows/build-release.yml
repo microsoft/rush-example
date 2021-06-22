@@ -33,6 +33,7 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-
 
       - name: Install rush
+        working-directory: .
         run: node common/scripts/install-run-rush.js install
 
       - name: Check CWD
