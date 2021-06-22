@@ -27,8 +27,8 @@ jobs:
       # - name: Set NPM Auth Token
       #   run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
 
-      # - name: Install rush
-      #   run: node common/scripts/install-run-rush.js install
+      - name: Install rush
+        run: node common/scripts/install-run-rush.js install
 
       - name: Prepare git config
         run: |
@@ -37,14 +37,6 @@ jobs:
 
       - name: Bump versions
         run: node common/scripts/install-run-rush.js version --bump -b master
-
-      # - name: Commit release
-      #   run: |
-      #     git config user.name github-actions
-      #     git config user.email github-actions@github.com
-      #     git add .
-      #     git commit -m "Automated release"
-      #     git push
 
       - name: Run release
         run: node common/scripts/install-run-rush.js publish --apply --target-branch master --pack --include-all --apply-git-tags-on-pack --publish
