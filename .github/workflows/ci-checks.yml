@@ -1,4 +1,4 @@
-name: Run Release
+name: CI Checks
 
 on:
   push:
