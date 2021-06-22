@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "my-app",
+      "comment": "13 and ver pol",
+      "type": "minor"
+    }
+  ],
+  "packageName": "my-app",
+  "email": "edward@synap.ac"
+}
