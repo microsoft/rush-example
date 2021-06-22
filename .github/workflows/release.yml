@@ -1,4 +1,4 @@
-name: Release Synap Core
+name: Run Release
 
 # on:
 #   push:
@@ -6,6 +6,8 @@ name: Release Synap Core
 #     tags:
 #       - "!v*"
 on:
+  workflow_dispatch:
+    inputs:
   schedule:
     # At every half hour, from Monday through Friday.
     - cron: "* * * * 1-5"
