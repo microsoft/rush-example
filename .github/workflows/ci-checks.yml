@@ -1,20 +1,14 @@
 name: Run Release
 
-# on:
-#   push:
-#     branches: [master]
-#     tags:
-#       - "!v*"
 on:
+  push:
+    branches: [master]
   workflow_dispatch:
     inputs:
-  schedule:
-    # At every half hour, from Monday through Friday.
-    - cron: "* * * * 1-5"
 
 jobs:
-  tag_release:
-    name: Create Release
+  ci-checks:
+    name: CI Checks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -37,14 +31,3 @@ jobs:
 
       - name: Install rush
         run: node common/scripts/install-run-rush.js install
-
-      - name: Prepare git config
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-
-      - name: Bump versions
-        run: node common/scripts/install-run-rush.js version --bump -b master
-
-      - name: Run release
-        run: node common/scripts/install-run-rush.js publish --apply --target-branch master --pack --include-all --apply-git-tags-on-pack --publish
