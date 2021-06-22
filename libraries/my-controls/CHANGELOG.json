@@ -1,0 +1,17 @@
+{
+  "name": "my-controls",
+  "entries": [
+    {
+      "version": "1.0.1",
+      "tag": "my-controls_v1.0.1",
+      "date": "Tue, 22 Jun 2021 10:00:51 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "rel1 again"
+          }
+        ]
+      }
+    }
+  ]
+}
