@@ -1,0 +1,33 @@
+name: Release Synap Core
+
+# on:
+#   push:
+#     branches: [master]
+#     tags:
+#       - "!v*"
+on:
+  schedule:
+    # At every half hour, from Monday through Friday.
+    - cron: "* * * * 1-5"
+
+jobs:
+  tag_release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node and NPM
+        uses: volta-cli/action@v1
+        with:
+          node-version: 14.15.1
+      # - name: Set NPM Auth Token
+      #   run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+
+      # - name: Install rush
+      #   run: node common/scripts/install-run-rush.js install
+
+      - name: Bump versions
+        run: common/scripts/install-run-rush.js version --bump -b master
+
+      - name: Run release
+        run: common/scripts/install-run-rush.js publish --apply --target-branch master --pack --include-all --apply-git-tags-on-pack --publish
