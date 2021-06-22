@@ -31,13 +31,17 @@
     {
       "packageName": "my-controls",
       "projectFolder": "libraries/my-controls",
-      "reviewCategory": "production"
+      "reviewCategory": "production",
+      "versionPolicyName": "publishMe",
+      "shouldPublish": true
     },
 
     {
       "packageName": "my-toolchain",
       "projectFolder": "tools/my-toolchain",
-      "reviewCategory": "tools"
+      "reviewCategory": "tools",
+      "versionPolicyName": "publishMe",
+      "shouldPublish": true
     }
   ]
 }
