@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "my-controls",
+      "comment": "rel1 again",
+      "type": "patch"
+    }
+  ],
+  "packageName": "my-controls",
+  "email": "edward@synap.ac"
+}
