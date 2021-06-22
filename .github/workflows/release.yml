@@ -18,7 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        token: ${{ secrets.GH_TOKEN }}
+        with:
+          token: ${{ secrets.GH_TOKEN }}
       - name: Setup Node and NPM
         uses: volta-cli/action@v1
         with:
