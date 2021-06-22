@@ -7,7 +7,7 @@ importers:
 
   ../../apps/my-app:
     specifiers:
-      my-controls: workspace:^1.0.0
+      my-controls: workspace:^1.0.1
       my-toolchain: workspace:^1.0.0
       typescript: ^3.0.3
       whatwg-fetch: ^3.0.0
