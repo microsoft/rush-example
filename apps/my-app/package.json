@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "An example application that consumes the my-controls library",
   "license": "MIT",
   "scripts": {
@@ -8,7 +8,7 @@
     "my-bulk-command": "node_modules/.bin/my-bulk-command"
   },
   "dependencies": {
-    "my-controls": "workspace:^1.0.0",
+    "my-controls": "workspace:^1.0.1",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {

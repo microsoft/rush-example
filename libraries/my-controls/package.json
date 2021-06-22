@@ -1,6 +1,6 @@
 {
   "name": "my-controls",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An example library project",
   "license": "MIT",
   "main": "lib/index.js",
