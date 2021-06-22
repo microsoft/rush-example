@@ -1,1 +1,6 @@
-[]
+[
+  {
+    "definitionName": "individualVersion",
+    "policyName": "publishMe"
+  }
+]
