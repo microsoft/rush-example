@@ -29,7 +29,7 @@ jobs:
       #   run: node common/scripts/install-run-rush.js install
 
       - name: Bump versions
-        run: common/scripts/install-run-rush.js version --bump -b master
+        run: node common/scripts/install-run-rush.js version --bump -b master
 
       - name: Run release
-        run: common/scripts/install-run-rush.js publish --apply --target-branch master --pack --include-all --apply-git-tags-on-pack --publish
+        run: node common/scripts/install-run-rush.js publish --apply --target-branch master --pack --include-all --apply-git-tags-on-pack --publish
