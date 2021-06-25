@@ -13,4 +13,3 @@ const somethingNew8 = "";
 const somethingNew9 = "";
 const somethingNew10 = "";
 const somethingNew11 = "";
-const somethingNew12 = "12";
