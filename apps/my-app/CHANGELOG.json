@@ -2,6 +2,18 @@
   "name": "my-app",
   "entries": [
     {
+      "version": "2.1.3",
+      "tag": "my-app_v2.1.3",
+      "date": "Fri, 25 Jun 2021 14:31:22 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Bump no push"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.2",
       "tag": "my-app_v2.1.2",
       "date": "Fri, 25 Jun 2021 14:26:35 GMT",

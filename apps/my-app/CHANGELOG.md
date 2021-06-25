@@ -1,6 +1,13 @@
 # Change Log - my-app
 
-This log was last generated on Fri, 25 Jun 2021 14:26:35 GMT and should not be manually modified.
+This log was last generated on Fri, 25 Jun 2021 14:31:22 GMT and should not be manually modified.
+
+## 2.1.3
+Fri, 25 Jun 2021 14:31:22 GMT
+
+### Patches
+
+- Bump no push
 
 ## 2.1.2
 Fri, 25 Jun 2021 14:26:35 GMT
