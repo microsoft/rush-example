@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "An example application that consumes the my-controls library",
   "license": "MIT",
   "scripts": {
