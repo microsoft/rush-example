@@ -1,6 +1,13 @@
 # Change Log - my-app
 
-This log was last generated on Tue, 22 Jun 2021 12:34:56 GMT and should not be manually modified.
+This log was last generated on Fri, 25 Jun 2021 14:12:33 GMT and should not be manually modified.
+
+## 2.1.0
+Fri, 25 Jun 2021 14:12:33 GMT
+
+### Minor changes
+
+- hjfkds
 
 ## 2.0.0
 Tue, 22 Jun 2021 12:34:56 GMT

@@ -2,6 +2,18 @@
   "name": "my-app",
   "entries": [
     {
+      "version": "2.1.0",
+      "tag": "my-app_v2.1.0",
+      "date": "Fri, 25 Jun 2021 14:12:33 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "hjfkds"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.0.0",
       "tag": "my-app_v2.0.0",
       "date": "Tue, 22 Jun 2021 12:34:56 GMT",
