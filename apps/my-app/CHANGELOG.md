@@ -1,6 +1,13 @@
 # Change Log - my-app
 
-This log was last generated on Fri, 25 Jun 2021 16:46:07 GMT and should not be manually modified.
+This log was last generated on Mon, 28 Jun 2021 08:41:45 GMT and should not be manually modified.
+
+## 3.2.1
+Mon, 28 Jun 2021 08:41:45 GMT
+
+### Patches
+
+- versioned cange
 
 ## 3.2.0
 Fri, 25 Jun 2021 16:46:07 GMT
