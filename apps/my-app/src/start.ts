@@ -10,4 +10,3 @@ const somethingNew5 = "";
 const somethingNew6 = "";
 const somethingNew7 = "";
 const somethingNew8 = "";
-const somethingNew9 = "";
