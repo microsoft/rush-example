@@ -6,4 +6,3 @@ const somethingNew = "";
 const somethingNew2 = "";
 const somethingNew3 = "";
 const somethingNew4 = "";
-const somethingNew5 = "";
