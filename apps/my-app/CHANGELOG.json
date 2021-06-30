@@ -2,6 +2,25 @@
   "name": "my-app",
   "entries": [
     {
+      "version": "3.2.3",
+      "tag": "my-app_v3.2.3",
+      "date": "Wed, 30 Jun 2021 08:18:40 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "change1 rebase merge",
+            "author": "Edward Mackenzie <71255911+egmacke@users.noreply.github.com>",
+            "commit": "5a274f43b9ea568331af821923da3fb692c1212b"
+          },
+          {
+            "comment": "change2 with rebase",
+            "author": "Edward Mackenzie <71255911+egmacke@users.noreply.github.com>",
+            "commit": "7e8aecf1bd9f6353c47ab9bd0047a5699c40218a"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.2.2",
       "tag": "my-app_v3.2.2",
       "date": "Wed, 30 Jun 2021 08:12:57 GMT",

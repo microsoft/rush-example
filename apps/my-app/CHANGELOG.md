@@ -1,6 +1,14 @@
 # Change Log - my-app
 
-This log was last generated on Wed, 30 Jun 2021 08:12:57 GMT and should not be manually modified.
+This log was last generated on Wed, 30 Jun 2021 08:18:40 GMT and should not be manually modified.
+
+## 3.2.3
+Wed, 30 Jun 2021 08:18:40 GMT
+
+### Patches
+
+- change1 rebase merge
+- change2 with rebase
 
 ## 3.2.2
 Wed, 30 Jun 2021 08:12:57 GMT
