@@ -5,4 +5,3 @@ myClass.doSomething();
 const somethingNew = "";
 const somethingNew2 = "";
 const somethingNew3 = "";
-const somethingNew4 = "";
