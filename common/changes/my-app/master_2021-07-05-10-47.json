@@ -3,7 +3,7 @@
     {
       "packageName": "my-app",
       "comment": "No email",
-      "type": "patch"
+      "type": "none"
     }
   ],
   "packageName": "my-app",
