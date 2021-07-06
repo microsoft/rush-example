@@ -1,136 +1,5 @@
-dependencies:
-  '@rush-temp/my-app': file:projects/my-app.tgz
-  '@rush-temp/my-controls': file:projects/my-controls.tgz
-  '@rush-temp/my-toolchain': file:projects/my-toolchain.tgz
-  '@types/node': 10.17.51
-  colors: 1.4.0
-  rimraf: 2.7.1
-  typescript: 3.9.7
-  whatwg-fetch: 3.5.0
-lockfileVersion: 5.2
-packages:
-  /@types/node/10.17.51:
-    dev: false
-    resolution:
-      integrity: sha512-KANw+MkL626tq90l++hGelbl67irOJzGhUJk6a1Bt8QHOeh9tztJx+L0AqttraWKinmZn7Qi5lJZJzx45Gq0dg==
-  /balanced-match/1.0.0:
-    dev: false
-    resolution:
-      integrity: sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
-  /brace-expansion/1.1.11:
-    dependencies:
-      balanced-match: 1.0.0
-      concat-map: 0.0.1
-    dev: false
-    resolution:
-      integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
-  /colors/1.4.0:
-    dev: false
-    engines:
-      node: '>=0.1.90'
-    resolution:
-      integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
-  /concat-map/0.0.1:
-    dev: false
-    resolution:
-      integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
-  /fs.realpath/1.0.0:
-    dev: false
-    resolution:
-      integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-  /glob/7.1.6:
-    dependencies:
-      fs.realpath: 1.0.0
-      inflight: 1.0.6
-      inherits: 2.0.4
-      minimatch: 3.0.4
-      once: 1.4.0
-      path-is-absolute: 1.0.1
-    dev: false
-    resolution:
-      integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
-  /inflight/1.0.6:
-    dependencies:
-      once: 1.4.0
-      wrappy: 1.0.2
-    dev: false
-    resolution:
-      integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=
-  /inherits/2.0.4:
-    dev: false
-    resolution:
-      integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
-  /minimatch/3.0.4:
-    dependencies:
-      brace-expansion: 1.1.11
-    dev: false
-    resolution:
-      integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
-  /once/1.4.0:
-    dependencies:
-      wrappy: 1.0.2
-    dev: false
-    resolution:
-      integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
-  /path-is-absolute/1.0.1:
-    dev: false
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
-  /rimraf/2.7.1:
-    dependencies:
-      glob: 7.1.6
-    dev: false
-    hasBin: true
-    resolution:
-      integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
-  /typescript/3.9.7:
-    dev: false
-    engines:
-      node: '>=4.2.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
-  /whatwg-fetch/3.5.0:
-    dev: false
-    resolution:
-      integrity: sha512-jXkLtsR42xhXg7akoDKvKWE40eJeI+2KZqcp2h3NsOrRnDvtWX36KcKl30dy+hxECivdk2BVUHVNrPtoMBUx6A==
-  /wrappy/1.0.2:
-    dev: false
-    resolution:
-      integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
-  file:projects/my-app.tgz:
-    dependencies:
-      typescript: 3.9.7
-      whatwg-fetch: 3.5.0
-    dev: false
-    name: '@rush-temp/my-app'
-    resolution:
-      integrity: sha512-5hQYNQ4OaheE4snzorkB/UcTAnQcq8uQ0uHMSpu7Q/3IPc6neV5wlvC9IM2aRs+YoC5MpjQlzP8AneCY+KngnQ==
-      tarball: file:projects/my-app.tgz
-    version: 0.0.0
-  file:projects/my-controls.tgz:
-    dependencies:
-      typescript: 3.9.7
-    dev: false
-    name: '@rush-temp/my-controls'
-    resolution:
-      integrity: sha512-9uBe99mh6UAW5iNqa1g+k1lCvgfhKpYVaxCj/jx7GWx88UyRspqJoCs+fhQQ5M0tJx/QJojjM84xVeR7WckqYg==
-      tarball: file:projects/my-controls.tgz
-    version: 0.0.0
-  file:projects/my-toolchain.tgz:
-    dependencies:
-      '@types/node': 10.17.51
-      colors: 1.4.0
-      rimraf: 2.7.1
-      typescript: 3.9.7
-    dev: false
-    name: '@rush-temp/my-toolchain'
-    resolution:
-      integrity: sha512-Mrgh3K0R8vXqJ3y4QPfJS2i+aXJzNBKITsr6yPgHwDVpSNlHZgqcAVeWuYOTwLiiyuNGSjmykcV2kt9fsKWJZg==
-      tarball: file:projects/my-toolchain.tgz
-    version: 0.0.0
+lockfileVersion: 5.3
+
 specifiers:
   '@rush-temp/my-app': file:./projects/my-app.tgz
   '@rush-temp/my-controls': file:./projects/my-controls.tgz
@@ -140,3 +9,131 @@ specifiers:
   rimraf: ^2.6.2
   typescript: ^3.0.3
   whatwg-fetch: ^3.0.0
+
+dependencies:
+  '@rush-temp/my-app': file:projects/my-app.tgz
+  '@rush-temp/my-controls': file:projects/my-controls.tgz
+  '@rush-temp/my-toolchain': file:projects/my-toolchain.tgz
+  '@types/node': 10.17.60
+  colors: 1.4.0
+  rimraf: 2.7.1
+  typescript: 3.9.10
+  whatwg-fetch: 3.6.2
+
+packages:
+
+  /@types/node/10.17.60:
+    resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
+    dev: false
+
+  /balanced-match/1.0.2:
+    resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+    dev: false
+
+  /brace-expansion/1.1.11:
+    resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
+    dependencies:
+      balanced-match: 1.0.2
+      concat-map: 0.0.1
+    dev: false
+
+  /colors/1.4.0:
+    resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==}
+    engines: {node: '>=0.1.90'}
+    dev: false
+
+  /concat-map/0.0.1:
+    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    dev: false
+
+  /fs.realpath/1.0.0:
+    resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
+    dev: false
+
+  /glob/7.1.7:
+    resolution: {integrity: sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==}
+    dependencies:
+      fs.realpath: 1.0.0
+      inflight: 1.0.6
+      inherits: 2.0.4
+      minimatch: 3.0.4
+      once: 1.4.0
+      path-is-absolute: 1.0.1
+    dev: false
+
+  /inflight/1.0.6:
+    resolution: {integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=}
+    dependencies:
+      once: 1.4.0
+      wrappy: 1.0.2
+    dev: false
+
+  /inherits/2.0.4:
+    resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
+    dev: false
+
+  /minimatch/3.0.4:
+    resolution: {integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==}
+    dependencies:
+      brace-expansion: 1.1.11
+    dev: false
+
+  /once/1.4.0:
+    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
+    dependencies:
+      wrappy: 1.0.2
+    dev: false
+
+  /path-is-absolute/1.0.1:
+    resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
+  /rimraf/2.7.1:
+    resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
+    hasBin: true
+    dependencies:
+      glob: 7.1.7
+    dev: false
+
+  /typescript/3.9.10:
+    resolution: {integrity: sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: false
+
+  /whatwg-fetch/3.6.2:
+    resolution: {integrity: sha512-bJlen0FcuU/0EMLrdbJ7zOnW6ITZLrZMIarMUVmdKtsGvZna8vxKYaexICWPfZ8qwf9fzNq+UEIZrnSaApt6RA==}
+    dev: false
+
+  /wrappy/1.0.2:
+    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
+    dev: false
+
+  file:projects/my-app.tgz:
+    resolution: {integrity: sha512-5hQYNQ4OaheE4snzorkB/UcTAnQcq8uQ0uHMSpu7Q/3IPc6neV5wlvC9IM2aRs+YoC5MpjQlzP8AneCY+KngnQ==, tarball: file:projects/my-app.tgz}
+    name: '@rush-temp/my-app'
+    version: 0.0.0
+    dependencies:
+      typescript: 3.9.10
+      whatwg-fetch: 3.6.2
+    dev: false
+
+  file:projects/my-controls.tgz:
+    resolution: {integrity: sha512-9uBe99mh6UAW5iNqa1g+k1lCvgfhKpYVaxCj/jx7GWx88UyRspqJoCs+fhQQ5M0tJx/QJojjM84xVeR7WckqYg==, tarball: file:projects/my-controls.tgz}
+    name: '@rush-temp/my-controls'
+    version: 0.0.0
+    dependencies:
+      typescript: 3.9.10
+    dev: false
+
+  file:projects/my-toolchain.tgz:
+    resolution: {integrity: sha512-Mrgh3K0R8vXqJ3y4QPfJS2i+aXJzNBKITsr6yPgHwDVpSNlHZgqcAVeWuYOTwLiiyuNGSjmykcV2kt9fsKWJZg==, tarball: file:projects/my-toolchain.tgz}
+    name: '@rush-temp/my-toolchain'
+    version: 0.0.0
+    dependencies:
+      '@types/node': 10.17.60
+      colors: 1.4.0
+      rimraf: 2.7.1
+      typescript: 3.9.10
+    dev: false
