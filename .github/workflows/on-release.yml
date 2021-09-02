@@ -1,0 +1,19 @@
+name: New Release
+
+on:
+  push:
+    tags:
+      - my-app_v*
+
+jobs:
+  on-release:
+    name: On Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get release version
+        if: ${{ env.RELEASE == null }}
+        id: version
+        run: |
+          echo "${GITHUB_REF#refs/*/my-app_v}"

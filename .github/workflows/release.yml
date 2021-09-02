@@ -1,16 +1,10 @@
 name: Run Release
 
-# on:
-#   push:
-#     branches: [master]
-#     tags:
-#       - "!v*"
 on:
   workflow_dispatch:
-    inputs:
   schedule:
-    # At every half hour, from Monday through Friday.
-    - cron: "* * * * 1-5"
+    # At every hour, from Monday through Friday.
+    - cron: "0 * * * 1-5"
 
 jobs:
   tag_release:
@@ -43,8 +37,8 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
 
-      - name: Bump versions
-        run: node common/scripts/install-run-rush.js version --bump -b master
-
-      - name: Run release
-        run: node common/scripts/install-run-rush.js publish --apply --target-branch master --pack --include-all --apply-git-tags-on-pack --publish
+      - name: Release Packages
+        run: |
+          node common/scripts/install-run-rush.js publish --apply --add-commit-details --target-branch master
+          node common/scripts/install-run-rush.js build -t synap-core
+          node common/scripts/install-run-rush.js publish --apply --target-branch master --pack --include-all --apply-git-tags-on-pack --publish
