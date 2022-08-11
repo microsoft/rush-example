@@ -9,9 +9,8 @@
     "build": "node_modules/.bin/my-build",
     "my-bulk-command": "node_modules/.bin/my-bulk-command"
   },
-  "dependencies": {},
   "devDependencies": {
-    "my-toolchain": "^1.0.0",
+    "my-toolchain": "workspace:^1.0.0",
     "typescript": "^3.0.3"
   }
 }

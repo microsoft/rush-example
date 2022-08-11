@@ -8,11 +8,11 @@
     "my-bulk-command": "node_modules/.bin/my-bulk-command"
   },
   "dependencies": {
-    "my-controls": "^1.0.0",
+    "my-controls": "workspace:^1.0.0",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "my-toolchain": "^1.0.0",
+    "my-toolchain": "workspace:^1.0.0",
     "typescript": "^3.0.3"
   }
 }
