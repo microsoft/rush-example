@@ -4,8 +4,8 @@
   "description": "An example application that consumes the my-controls library",
   "license": "MIT",
   "scripts": {
-    "build": "node_modules/.bin/my-build",
-    "my-bulk-command": "node_modules/.bin/my-bulk-command"
+    "build": "my-build",
+    "my-bulk-command": "my-bulk-command"
   },
   "dependencies": {
     "my-controls": "workspace:^1.0.0",
