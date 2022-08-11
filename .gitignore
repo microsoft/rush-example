@@ -64,6 +64,9 @@ common/temp/
 common/autoinstallers/*/.npmrc
 **/.rush/temp/
 
+# Heft
+.heft
+
 # Common toolchain intermediate files
 lib
 temp

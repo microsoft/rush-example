@@ -16,7 +16,7 @@
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.47.0",
+  "rushVersion": "5.76.1",
 
   /**
    * The next field selects which package manager should be installed and determines its version.
@@ -26,9 +26,9 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "6.3.0",
+  "pnpmVersion": "6.7.1",
 
-  // "npmVersion": "4.5.0",
+  // "npmVersion": "6.14.15",
   // "yarnVersion": "1.9.4",
 
   /**
@@ -110,7 +110,7 @@
      *
      * This option is experimental. The default value is false.
      */
-    // "useWorkspaces": true
+    "useWorkspaces": true
   },
 
   /**
@@ -124,7 +124,7 @@
    * LTS schedule: https://nodejs.org/en/about/releases/
    * LTS versions: https://nodejs.org/en/download/releases/
    */
-  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0",
+  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0 || >=16.13.0 <17.0.0",
 
   /**
    * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
@@ -262,7 +262,7 @@
      * you might configure your system's trigger to look for a special string such as "[skip-ci]"
      * in the commit message, and then customize Rush's message to contain that string.
      */
-    "versionBumpCommitMessage": "Applying package updates. [skip-ci]",
+    "versionBumpCommitMessage": "Bump versions [skip ci]",
 
     /**
      * The commit message to use when committing changes during 'rush version'.
@@ -271,7 +271,7 @@
      * you might configure your system's trigger to look for a special string such as "[skip-ci]"
      * in the commit message, and then customize Rush's message to contain that string.
      */
-    "changeLogUpdateCommitMessage": "Deleting change files and updating change logs for package updates. [skip-ci]"
+    "changeLogUpdateCommitMessage": "Update changelogs [skip ci]"
   },
 
   "repository": {
@@ -279,24 +279,24 @@
      * The URL of this Git repository, used by "rush change" to determine the base branch for your PR.
      *
      * The "rush change" command needs to determine which files are affected by your PR diff.
-     * If you merged or cherry-picked commits from the master branch into your PR branch, those commits
+     * If you merged or cherry-picked commits from the main branch into your PR branch, those commits
      * should be excluded from this diff (since they belong to some other PR).  In order to do that,
      * Rush needs to know where to find the base branch for your PR.  This information cannot be
      * determined from Git alone, since the "pull request" feature is not a Git concept.  Ideally
      * Rush would use a vendor-specific protocol to query the information from GitHub, Azure DevOps, etc.
-     * But to keep things simple, "rush change" simply assumes that your PR is against the "master" branch
+     * But to keep things simple, "rush change" simply assumes that your PR is against the "main" branch
      * of the Git remote indicated by the repository.url setting in rush.json.  If you are working in
      * a GitHub "fork" of the real repo, this setting will be different from the repository URL of your
      * your PR branch, and in this situation "rush change" will also automatically invoke "git fetch"
-     * to retrieve the latest activity for the remote master branch.
+     * to retrieve the latest activity for the remote main branch.
      */
     // "url": "https://github.com/microsoft/rush-example",
 
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
-     * The default value is "master"
+     * The default value is "main"
      */
-    // "defaultBranch": "master",
+    // "defaultBranch": "main",
 
     /**
      * The default remote. This tells "rush change" which remote to compare against if the remote URL is
@@ -381,6 +381,13 @@
   // "hotfixChangeEnabled": false,
 
   /**
+    * This is an optional, but recommended, list of available tags that can be applied
+    * to projects. If this property is not specified, any tag is allowed. This
+    * list is useful in preventing typos when specifying tags for projects.
+    */
+  // "allowedProjectTags": [ "apps", "Web", "tools" ],
+
+  /**
    * (Required) This is the inventory of projects to be managed by Rush.
    *
    * Rush does not automatically scan for projects using wildcards, for a few reasons:
@@ -408,11 +415,29 @@
       "reviewCategory": "production",
 
       /**
-       * A list of local projects that appear as devDependencies for this project, but cannot be
-       * locally linked because it would create a cyclic dependency; instead, the last published
-       * version will be installed in the Common folder.
+       * A list of Rush project names that are to be installed from NPM
+       * instead of linking to the local project.
+       *
+       * If a project's package.json specifies a dependency that is another Rush project
+       * in the monorepo workspace, normally Rush will locally link its folder instead of
+       * installing from NPM.  If you are using PNPM workspaces, this is indicated by
+       * a SemVer range such as "workspace:^1.2.3".  To prevent mistakes, Rush reports
+       * an error if the "workspace:" protocol is missing.
+       *
+       * Locally linking ensures that regressions are caught as early as possible and is
+       * a key benefit of monorepos.  However there are occasional situations where
+       * installing from NPM is needed.  A classic example is a cyclic dependency.
+       * Imagine three Rush projects: "my-toolchain" depends on "my-tester", which depends
+       * on "my-library".  Suppose that we add "my-toolchain" to the "devDependencies"
+       * of "my-library" so it can be built by our toolchain.  This cycle creates
+       * a problem -- Rush can't build a project using a not-yet-built dependency.
+       * We can solve it by adding "my-toolchain" to the "decoupledLocalDependencies"
+       * of "my-library", so it builds using the last published release.  Choose carefully
+       * which package to decouple; some choices are much easier to manage than others.
+       *
+       * (In older Rush releases, this setting was called "cyclicDependencyProjects".)
        */
-      "cyclicDependencyProjects": [
+      "decoupledLocalDependencies": [
         // "my-toolchain"
       ],
 
@@ -443,19 +468,28 @@
        * in "version-policies.json" file.  See the "rush publish" documentation for more info.
        * NOTE: "versionPolicyName" and "shouldPublish" are alternatives; you cannot specify them both.
        */
-      // "versionPolicyName": ""
+      // "versionPolicyName": "",
+
+      /**
+        * An optional set of custom tags that can be used to select this project. For example,
+        * adding "my-custom-tag" will allow this project to be selected by the
+        * command "rush list --only tag:my-custom-tag"
+        */
+      // "tags": ["apps", "web"]
     },
 
     {
       "packageName": "my-controls",
       "projectFolder": "libraries/my-controls",
-      "reviewCategory": "production"
+      "reviewCategory": "production",
+      "tags": ["libraries", "web"]
     },
 
     {
       "packageName": "my-toolchain",
       "projectFolder": "tools/my-toolchain",
-      "reviewCategory": "tools"
+      "reviewCategory": "tools",
+      "tags": ["tools"]
     }
   ]
 }
