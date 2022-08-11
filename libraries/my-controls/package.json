@@ -1,17 +1,17 @@
 {
   "name": "my-controls",
   "version": "1.0.0",
+  "private": true,
   "description": "An example library project",
   "license": "MIT",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "build": "node_modules/.bin/my-build",
-    "my-bulk-command": "node_modules/.bin/my-bulk-command"
+    "build": "my-build",
+    "my-bulk-command": "my-bulk-command"
   },
-  "dependencies": {},
   "devDependencies": {
-    "my-toolchain": "^1.0.0",
+    "my-toolchain": "workspace:^1.0.0",
     "typescript": "^3.0.3"
   }
 }
