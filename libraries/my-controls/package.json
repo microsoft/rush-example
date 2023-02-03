@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "my-toolchain": "workspace:^1.0.0",
+    "@types/node": "^16.0.0",
     "typescript": "^3.0.3"
   }
 }

@@ -7,11 +7,13 @@ importers:
 
   ../../apps/my-app:
     specifiers:
+      '@types/node': ~18.11.18
       my-controls: workspace:^1.0.0
       my-toolchain: workspace:^1.0.0
       typescript: ^3.0.3
       whatwg-fetch: ^3.6.2
     dependencies:
+      '@types/node': 18.11.18
       my-controls: link:../../libraries/my-controls
       whatwg-fetch: 3.6.2
     devDependencies:
@@ -20,9 +22,11 @@ importers:
 
   ../../libraries/my-controls:
     specifiers:
+      '@types/node': ^16.0.0
       my-toolchain: workspace:^1.0.0
       typescript: ^3.0.3
     devDependencies:
+      '@types/node': 16.18.11
       my-toolchain: link:../../tools/my-toolchain
       typescript: 3.9.10
 
@@ -37,13 +41,21 @@ importers:
     devDependencies:
       '@types/node': 16.11.47
       rimraf: 2.7.1
-      typescript: 4.9.4
+      typescript: 4.9.5
 
 packages:
 
   /@types/node/16.11.47:
     resolution: {integrity: sha512-fpP+jk2zJ4VW66+wAMFoBJlx1bxmBKx4DUFf68UHgdGCOuyUTDlLWqsaNPJh7xhNDykyJ9eIzAygilP/4WoN8g==}
     dev: true
+
+  /@types/node/16.18.11:
+    resolution: {integrity: sha512-3oJbGBUWuS6ahSnEq1eN2XrCyf4YsWI8OyCvo7c64zQJNplk3mO84t53o8lfTk+2ji59g5ycfc6qQ3fdHliHuA==}
+    dev: true
+
+  /@types/node/18.11.18:
+    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
+    dev: false
 
   /balanced-match/1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -121,8 +133,8 @@ packages:
     hasBin: true
     dev: true
 
-  /typescript/4.9.4:
-    resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
+  /typescript/4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true

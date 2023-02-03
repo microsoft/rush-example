@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "my-controls": "workspace:^1.0.0",
-    "whatwg-fetch": "^3.6.2"
+    "whatwg-fetch": "^3.6.2",
+    "@types/node": "~18.11.18"
   },
   "devDependencies": {
     "my-toolchain": "workspace:^1.0.0",

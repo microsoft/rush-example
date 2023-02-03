@@ -4,7 +4,7 @@
   "packages": [
     {
       "name": "@types/node",
-      "allowedCategories": [ "tools" ]
+      "allowedCategories": [ "production", "tools" ]
     },
     {
       "name": "colors",
