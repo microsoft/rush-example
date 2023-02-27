@@ -75,3 +75,6 @@ common/autoinstallers/*/.npmrc
 # Common toolchain intermediate files
 lib
 temp
+
+compose.yaml
+app-pem.pem
