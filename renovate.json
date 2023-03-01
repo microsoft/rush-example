@@ -3,11 +3,18 @@
   "extends": [
     "config:base"
   ],
-  "renovateFork":true,
+  "includeForks":true,
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true
   },
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchPackagePatterns": ["lint", "prettier"],
+      "automerge": true
+    }
+  ],
   "postUpgradeTasks": {
     "commands": [
         "node common/scripts/install-run-rush.js update",
