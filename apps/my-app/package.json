@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "my-controls": "workspace:^1.0.0",
-    "whatwg-fetch": "^3.6.2"
+    "whatwg-fetch": "3.6.2"
   },
   "devDependencies": {
     "my-toolchain": "workspace:^1.0.0",
-    "typescript": "^3.0.3"
+    "typescript": "3.9.10"
   }
 }
