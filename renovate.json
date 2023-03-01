@@ -3,8 +3,11 @@
   "extends": [
     "config:base"
   ],
-  "includeForks":true,
   "renovateFork":true,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
   "postUpgradeTasks": {
     "commands": [
         "node common/scripts/install-run-rush.js update",
