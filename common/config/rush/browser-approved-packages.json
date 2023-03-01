@@ -3,6 +3,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "axios",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "lodash",
       "allowedCategories": [ "production" ]
     },
@@ -12,6 +16,10 @@
     },
     {
       "name": "prettier",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "rambda",
       "allowedCategories": [ "production" ]
     },
     {
