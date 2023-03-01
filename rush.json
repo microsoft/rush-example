@@ -169,10 +169,10 @@
      * IMPORTANT: Because these are regular expressions encoded as JSON string literals,
      * RegExp escapes need two backslashes, and ordinary periods should be "\\.".
      */
-    "allowedEmailRegExps": [
-      "[^@]+@users\\.noreply\\.github\\.com",
-      "rush-bot@example\\.org"
-    ],
+//    "allowedEmailRegExps": [
+//      "[^@]+@users\\.noreply\\.github\\.com",
+//      "rush-bot@example\\.org"
+//    ],
 
     /**
      * When Rush reports that the address is malformed, the notice can include an example
