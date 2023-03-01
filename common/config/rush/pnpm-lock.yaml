@@ -7,17 +7,21 @@ importers:
 
   ../../apps/my-app:
     specifiers:
+      lodash: 3.0.0
       my-controls: workspace:^1.0.0
       my-toolchain: workspace:^1.0.0
+      prettier: ^2.8.0
       react: 16.0.0
       typescript: 3.9.10
       whatwg-fetch: 3.6.2
     dependencies:
+      lodash: 3.0.0
       my-controls: link:../../libraries/my-controls
       react: 16.0.0
       whatwg-fetch: 3.6.2
     devDependencies:
       my-toolchain: link:../../tools/my-toolchain
+      prettier: 2.8.4
       typescript: 3.9.10
 
   ../../libraries/my-controls:
@@ -143,6 +147,10 @@ packages:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: false
 
+  /lodash/3.0.0:
+    resolution: {integrity: sha512-GFMDPshMSMkDX/6y0h60FED+G00qMjVGpi+obx0feBDpeWUC9jXDAA+OmnXa4sWDvgpY7ogaaHLDJz8jXyRLqg==}
+    dev: false
+
   /loose-envify/1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
@@ -177,6 +185,12 @@ packages:
   /path-is-absolute/1.0.1:
     resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /prettier/2.8.4:
+    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: true
 
   /promise/7.3.1:

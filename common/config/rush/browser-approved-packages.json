@@ -3,7 +3,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "lodash",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "my-controls",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "prettier",
       "allowedCategories": [ "production" ]
     },
     {
