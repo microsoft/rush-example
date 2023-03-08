@@ -27,6 +27,6 @@
         "common/config/rush/pnpm-lock.yaml",
         "common/changes/**/*.json"
     ],
-    "executionMode": "branch"
+    "executionMode": "update"
   }
 }
