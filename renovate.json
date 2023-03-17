@@ -10,9 +10,23 @@
   },
   "packageRules": [
     {
+      "description": "Disables the creation of branches/PRs for any minor/patch updates etc. of Renovate bot",
       "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
       "matchPackagePatterns": ["lint", "prettier"],
-      "automerge": true
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "description": "Causes the bot to create a PR (and thus, an email notification), whenever there is a new major Renovate version",
+      "matchPaths": ["renovate-update-notification/Dockerfile"],
+      "matchUpdateTypes": ["major"],
+      // you can also set automerge to true - emails for the PRs will already have been sent anyway, so there is
+      // no strict reason to keep the PR open - unless you want to associate it with updates you make to renovate.json5
+      "automerge": false,
+      // just re-states the default and ensures that PRs are really created - you can remove this line
+      // if you did not change "prCreation" elsewhere to some non-default value
+      "prCreation": "immediate",
     }
   ],
   "postUpgradeTasks": {
@@ -28,6 +42,6 @@
         "common/config/rush/pnpm-lock.yaml",
         "common/changes/**/*.json"
     ],
-    "executionMode": "branch"
+    "executionMode": "update"
   }
 }
