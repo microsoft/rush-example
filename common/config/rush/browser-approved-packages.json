@@ -15,11 +15,31 @@
       "allowedCategories": [ "production" ]
     },
     {
+      "name": "chai",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "eslint",
       "allowedCategories": [ "production" ]
     },
     {
+      "name": "express",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "jest",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "jointjs",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "lodash",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "mongoose",
       "allowedCategories": [ "production" ]
     },
     {
