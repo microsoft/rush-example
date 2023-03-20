@@ -16,7 +16,7 @@ importers:
       jest: 29.5.0
       jointjs: 3.5.0
       lodash: 3.0.0
-      mongoose: 7.0.0
+      mongoose: 7.0.2
       my-controls: workspace:^1.0.0
       my-toolchain: workspace:^1.0.0
       prettier: 2.8.4
@@ -33,7 +33,7 @@ importers:
       express: 4.0.0
       jointjs: 3.5.0
       lodash: 3.0.0
-      mongoose: 7.0.0
+      mongoose: 7.0.2
       my-controls: link:../../libraries/my-controls
       rambda: 7.0.0
       react: 16.14.0
@@ -2754,8 +2754,8 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose/7.0.0:
-    resolution: {integrity: sha512-U0YPURDld+k/nvvSG1mRClQSjZMRXwQKSU5yb9PslRnOmVz0UlBD7SjSnjUuGT0yk+7BH+kJNimsKqMxYAKkMA==}
+  /mongoose/7.0.2:
+    resolution: {integrity: sha512-whX+5lAOLOs6VXRr9w+6m5qb8m/IXWLLb9+0/HRUh2TiIYtTt7UvajK92zW6wllCjBkrrnz/MDIOTCWMbs8K4g==}
     engines: {node: '>=14.0.0'}
     dependencies:
       bson: 5.1.0
