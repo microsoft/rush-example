@@ -13,7 +13,7 @@ importers:
       chai: 4.0.0
       eslint: 8.0.0
       express: 4.0.0
-      jest: 29.0.0
+      jest: 29.5.0
       jointjs: 3.5.0
       lodash: 3.0.0
       mongoose: 7.0.0
@@ -41,7 +41,7 @@ importers:
       whatwg-fetch: 3.6.2
     devDependencies:
       eslint: 8.0.0
-      jest: 29.0.0
+      jest: 29.5.0
       my-toolchain: link:../../tools/my-toolchain
       prettier: 2.8.4
       typescript: 3.9.10
@@ -1174,8 +1174,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001467
-      electron-to-chromium: 1.4.332
+      caniuse-lite: 1.0.30001468
+      electron-to-chromium: 1.4.333
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
     dev: true
@@ -1214,8 +1214,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /caniuse-lite/1.0.30001467:
-    resolution: {integrity: sha512-cEdN/5e+RPikvl9AHm4uuLXxeCNq8rFsQ+lPHTfe/OtypP3WwnVVbjn+6uBV7PaFL6xUFzTh+sSCOz1rKhcO+Q==}
+  /caniuse-lite/1.0.30001468:
+    resolution: {integrity: sha512-zgAo8D5kbOyUcRAgSmgyuvBkjrGk5CGYG5TYgFdpQv+ywcyEpo1LOWoG8YmoflGnh+V+UsNuKYedsoYs0hzV5A==}
     dev: true
 
   /chai/4.0.0:
@@ -1456,8 +1456,8 @@ packages:
       csstype: 3.1.1
     dev: false
 
-  /electron-to-chromium/1.4.332:
-    resolution: {integrity: sha512-c1Vbv5tuUlBFp0mb3mCIjw+REEsgthRgNE8BlbEDKmvzb8rxjcVki6OkQP83vLN34s0XCxpSkq7AZNep1a6xhw==}
+  /electron-to-chromium/1.4.333:
+    resolution: {integrity: sha512-YyE8+GKyGtPEP1/kpvqsdhD6rA/TP1DUFDN4uiU/YI52NzDxmwHkEb3qjId8hLBa5siJvG0sfC3O66501jMruQ==}
     dev: true
 
   /emittery/0.13.1:
@@ -2456,8 +2456,8 @@ packages:
       supports-color: 8.1.1
     dev: true
 
-  /jest/29.0.0:
-    resolution: {integrity: sha512-9uz4Tclskb8WrfRXqu66FsFCFoyYctwWXpruKwnD95FZqkyoEAA1oGH53HUn7nQx7uEgZTKdNl/Yo6DqqU+XMg==}
+  /jest/29.5.0:
+    resolution: {integrity: sha512-juMg3he2uru1QoXX078zTa7pO85QyB9xajZc6bU+d9yEGwrKX6+vGmJQ3UdVZsvTEUARIdObzH68QItim6OSSQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
     peerDependencies:
