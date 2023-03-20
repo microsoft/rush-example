@@ -20,7 +20,8 @@
     "@material-ui/icons": "4.9.1",
     "jointjs": "3.5.0",
     "express": "4.0.0",
-    "mongoose": "7.0.0"
+    "mongoose": "7.0.0",
+    "chai": "4.0.0"
   },
   "devDependencies": {
     "my-toolchain": "workspace:^1.0.0",
