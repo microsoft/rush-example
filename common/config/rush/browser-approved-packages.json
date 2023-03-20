@@ -39,6 +39,10 @@
       "allowedCategories": [ "production" ]
     },
     {
+      "name": "mocha",
+      "allowedCategories": [ "production" ]
+    },
+    {
       "name": "mongoose",
       "allowedCategories": [ "production" ]
     },
