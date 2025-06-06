@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/refs/heads/main/schema/2025-03-26/schema.json",
+
+  "mcpServers": {
+    "rush-mcp-server": {
+       "command": "node",
+       "args": [
+        "./common/scripts/install-run.js",
+        "@rushstack/mcp-server@0.2.1",
+        "mcp-server",
+        "."
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+/**
+ * This file configures the behavior of `@rushstack/mcp-server` for a given monorepo.
+ * Its file path:  <your-repo>/common/config/rush-mcp/rush-mcp.json
+ */
+{
+  /**
+   * The list of plugins that `@rushstack/mcp-server` should load when processing this monorepo.
+   */
+  "mcpPlugins": [
+    {
+      /**
+       * The name of an NPM package that appears in the package.json "dependencies" for the autoinstaller.
+       */
+      "packageName": "rush-mcp-example-plugin",
+
+      /**
+       * The name of a Rush autoinstaller with this package as its dependency.
+       * The `@rushstack/mcp-server` will automatically ensure this folder is installed
+       * before attempting to load the plugin.
+       */
+      "autoinstaller": "rush-mcp"
+    }
+  ]
+}

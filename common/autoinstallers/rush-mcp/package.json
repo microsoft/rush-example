@@ -1,0 +1,8 @@
+{
+  "name": "rush-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "rush-mcp-example-plugin": "file:../../../../rushstack/build-tests/rush-mcp-example-plugin/"
+  }
+}
